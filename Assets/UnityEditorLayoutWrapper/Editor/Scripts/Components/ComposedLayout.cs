@@ -30,7 +30,7 @@ namespace UnityEditorLayoutWrapper.Components {
 		public static string Search(string searchValue, Color color = default(Color),
 			params GUILayoutOption[] layouts) {
 			Layout.HorizontalBox(() => {
-				Label.Custom("Search", default(Color), layouts);
+				Label.Custom("Search", color == default(Color) ? default(Color) : color, layouts);
 				searchValue = GUILayout.TextField(searchValue);
 			});
 			return searchValue;

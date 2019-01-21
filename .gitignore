@@ -40,6 +40,11 @@
 # CMake
 cmake-build-*/
 
+.idea/
+
+JetBrains
+JetBrains.meta
+
 # Mongo Explorer plugin
 .idea/**/mongoSettings.xml
 
